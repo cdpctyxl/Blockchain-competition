@@ -12,6 +12,7 @@ import InitCluster from "../../parts/init-cluster.comp"
 import BalanceCluster from "../../parts/balance-cluster.comp"
 import MarketItemsCluster from "../../parts/market-items-cluster.comp"
 import AccountItemsCluster from "../../parts/account-items-cluster.comp"
+import FileUpload from "../../parts/fileupload.comp"
 import {
   Alert,
   AlertIcon,
@@ -60,7 +61,7 @@ export function MintButton({ address }) {
 
   return (
     <Button disabled={items.status !== IDLE} onClick={items.mint}>
-      Mint Item
+      发布
     </Button>
   )
 }
@@ -150,6 +151,7 @@ export function Page() {
             {cu.addr === address && (
                     <Box ml="4">
                       <Suspense fallback={null}>
+                        <FileUpload />
                         <MintButton address={address} />
                       </Suspense>
                     </Box>
