@@ -19,6 +19,7 @@
     "NonFungibleToken": {
       "source": "./cadence/contracts/NonFungibleToken.cdc",
       "aliases": {
+        "emulator": "0xee82856bff1d7aa6",
         "testnet": "0x631e88ae7f1d7c20"
       }
     }
@@ -55,8 +56,8 @@
       "emulator-account": [
         "Kibble",
         "KittyItems",
-        "KittyItemsMarket",
-        "NonFungibleToken"
+        "KittyItemsMarket"
+  
       ]
     }
   }
