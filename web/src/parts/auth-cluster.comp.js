@@ -24,7 +24,7 @@ export function AuthCluster() {
       <Flex>
         <HStack>
           <Image src={Logo} />
-          <Heading size="lg">Kitty Items</Heading>
+          <Heading size="lg">艺术家工作室</Heading>
         </HStack>
         <Spacer />
         <Center>
