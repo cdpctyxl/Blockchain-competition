@@ -1,15 +1,13 @@
 <p align="center">
-    <a href="http://kitty-items-flow-testnet.herokuapp.com/">
-        <img width="400" src="kitty-items-banner.png" />
-    </a>
+ 河北石油职业技术大学参赛作品：NFT艺术家工作室 ArtistStudio
 </p>
 
-👋 Welcome! This demo app was created to help you learn how to build on Flow.
+👋 Welcome! ArtistStudio是一个艺术家用来上传、买卖自己的书画作品的NFT工作室.
 
-- Kitty Items is a **complete NFT marketplace** built with [Cadence](https://docs.onflow.org/cadence), Flow's resource-oriented smart contract programming language.
-- Learn how to deploy contracts, mint NFTs, and integrate user wallets with the Flow Client Library (FCL).
+-ArtistStudio用flow链的合约语言 [Cadence](https://docs.onflow.org/cadence)开发
+- 功能包括上传书画作品及其创作小传与授权文件，发行为NFT，在市场中拍卖、买卖
 
-## 🎬 Live Demo
+## 🎬 访问地址：
 
 Check out the [live demo of Kitty Items](http://kitty-items-flow-testnet.herokuapp.com/),
 deployed on the Flow Testnet.
