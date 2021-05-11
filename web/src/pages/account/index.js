@@ -156,6 +156,28 @@ export function Page() {
                       </Suspense>
                     </Box>
                   )}
+
+              <Tabs colorScheme="pink" defaultIndex={0}>
+                <TabList>
+                  <Tab fontSize="2xl">
+                    <HStack>
+                      <Image src={BackPack} />
+                      <Box>{cu.addr === address ? "My" : "User"} Items</Box>
+                    </HStack>
+                    <Suspense fallback={null}>
+                      <AccountItemsCount address={address} />
+                    </Suspense>
+                  </Tab>
+  
+                </TabList>
+
+                <TabPanels>
+                  <TabPanel>
+                    <AccountItemsCluster address={address} />
+                  </TabPanel>
+             
+                </TabPanels>
+              </Tabs>
             </TabPanel>
             <TabPanel>
               <Tabs colorScheme="pink" defaultIndex={0}>
@@ -198,13 +220,7 @@ export function Page() {
                 <Box ml="4">
                   <BalanceCluster address={address} />
                 </Box>
-                {cu.addr === address && (
-                  <Box ml="4">
-                    <Suspense fallback={null}>
-                      <MintButton address={address} />
-                    </Suspense>
-                  </Box>
-                )}
+              
               </Flex>
             </TabPanel>
           </TabPanels>
