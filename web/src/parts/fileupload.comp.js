@@ -47,16 +47,14 @@ const FileUpload = () => {
       <FormLabel htmlFor="writeUpFile"></FormLabel>
       <InputGroup>
     
-        <Input type='file' accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" placeholder="你的作品 ..." name="dd" onChange={previewPiece}></Input>
-        <img src={piece} alt=""  height="200" width="200" />
+        <Input type='file' accept="image/gif,image/jpeg,image/jpg,image/png,image/svg"  width="100" onChange={previewPiece}></Input>
+        <img src={piece} alt=""  height="100" width="100" />
 
       </InputGroup>
       <InputGroup>
-        <InputLeftElement
-          pointerEvents="none"
-        />
-        <Input type='file' accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" name="" onChange={previewPieceProof} ></Input>
-        <img src={pieceProof} alt=""  height="200" width="200" />
+
+        <Input type='file' accept="image/gif,image/jpeg,image/jpg,image/png,image/svg"  width="100" onChange={previewPieceProof} ></Input>
+        <img src={pieceProof} alt=""  height="100" width="100" />
       </InputGroup>
       <FormErrorMessage>
 
