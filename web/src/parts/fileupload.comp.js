@@ -1,4 +1,4 @@
-import { Input, FormControl, FormLabel, InputGroup, InputLeftElement, FormErrorMessage, Code, Icon } from "@chakra-ui/react"
+import {Button,  Input, FormControl, FormLabel, InputGroup, InputLeftElement, FormErrorMessage, Code, Icon } from "@chakra-ui/react"
 import { atom, useRecoilState } from "recoil"
 
 export const pieceState = atom({
@@ -59,6 +59,8 @@ const FileUpload = () => {
       <FormErrorMessage>
 
       </FormErrorMessage>
+      <Button  value="保存"  width="100"  ></Button>
+
     </FormControl>
   );
 }
