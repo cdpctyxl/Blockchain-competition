@@ -95,9 +95,9 @@
     google-protobuf "^3.11.4"
 
 "@onflow/protobuf@^0.1.8":
-  version "0.1.7"
-  resolved "https://registry.nlark.com/@onflow/protobuf/download/@onflow/protobuf-0.1.7.tgz#076f046d83646548578136897fe525318f490ea5"
-  integrity sha1-B28EbYNkZUhXgTaJf+UlMY9JDqU=
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@onflow/protobuf/-/protobuf-0.1.8.tgz#1b790340efaa222e6e489d818ff426ce4739805d"
+  integrity sha512-Taww31RrpJMr3fkWgF2HR2TcRbAoPbMjwRYt9IlYknyRX5YTzpaU35petdqDRfxwmfY9mRxHbiInujX4aV02Hw==
   dependencies:
     "@improbable-eng/grpc-web" "^0.12.0"
     google-protobuf "^3.11.4"
