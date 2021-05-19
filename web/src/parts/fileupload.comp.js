@@ -17,8 +17,12 @@ const FileUpload = () => {
   function previewPiece(event) {
 
     debugger
-
+    if(event.target.files.length == 0){
+      setPiece(null)
+      return;
+    }
     let reader = new FileReader()
+    
     reader.readAsDataURL(event.target.files[0])
 
 
@@ -31,7 +35,10 @@ const FileUpload = () => {
   function previewPieceProof(event) {
 
     debugger
-
+    if(event.target.files.length == 0){
+      setPieceProof(null)
+      return;
+    }
     let reader = new FileReader()
     reader.readAsDataURL(event.target.files[0])
 
